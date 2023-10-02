@@ -34,3 +34,32 @@ for( let i = 0; i < arr.length; i++){
     console.log(arr[i]);
 };
 
+
+let arrr = [3, 5, 6, 7, 11];
+for (let i = 0; i < arrr.length; i++){
+    if(i === 3){
+        continue;
+    }
+    console.log(`i = ${i}`);
+    console.log(`arrr element = ${arrr[i]}`);
+};
+
+
+let arrray = [3, 5, 6, 7, 11];
+for (let i = 0; i < arrray.length; i++){
+    if(i === 3){
+        break;
+    }
+    console.log(`i = ${i}`);
+    console.log(`arrr element = ${arrray[i]}`);
+};
+
+
+for(let i = 0; i < 3; i++){
+    console.log(`i = ${i}`);
+
+    for(let j = 0; j < 3; j++){
+        console.log(`j = ${j}`);
+    };
+};
+
