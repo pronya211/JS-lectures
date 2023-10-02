@@ -97,3 +97,85 @@ console.log(funcWithDefaultParams(3));
 console.log(funcWithDefaultParams("Hello", " world"));
 
 
+const fnWithReturn = () => {
+    for ( let i = 0; i < 10; i++){
+        console.log(i);
+        if (i === 6){
+            return
+        };
+    };
+
+};
+
+fnWithReturn();
+
+
+console.log(Date());
+
+
+const myRequestWithDate = (userName, addedAt = Date()) => {
+    let requestBody = {
+        username: userName,
+        timestamp: addedAt
+    };
+
+    requestBody. username = userName;
+    requestBody.timestamp = addedAt;
+
+    return requestBody;
+};
+
+console.log(myRequestWithDate('Igor', '123331233123'));
+console.log(myRequestWithDate('Igor'));
+console.log(myRequestWithDate());
+
+
+function first(){
+    console.log('First')
+};
+
+first();
+
+function someFn(){
+    console.log('hello')
+}
+
+setTimeout(someFn, 5000);
+
+console.log('World');
+
+
+function first(){
+    setTimeout(function (){
+        console.log('First');
+    }, 5000)
+};
+
+function second(){
+    console.log('Second');
+};
+
+first();
+second();
+
+
+function someFnCalllback(p1, callBackFn){
+    console.log(`Param1 = ${p1}`);
+    callBackFn();
+}
+
+
+function first(someCallback){
+    setTimeout(function (){
+        console.log('First');
+    }, 5000)
+
+    someCallback();
+};
+
+function second(){
+    console.log('Second');
+};
+
+first(second);
+
