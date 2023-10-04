@@ -211,6 +211,6 @@ req9.then((item) => {
 }).catch(() => {
     console.log('Error')
 }). finally(() =>{
-    console.log("Цей лог виводиться в будь-якому виавдку")
+    console.log("Цей лог виводиться в будь-якому випадку")
 })
 
